@@ -8,15 +8,13 @@ import { ThemeProvider, Text } from 'evergreen-ui'
 
 import theme from './custom-theme'
 
-const CustomThemeProvider = (props) => (
+const App = () => (
   <ThemeProvider value={theme}>
-    {props.children}
+    <Text>Hello</Text>
   </CustomThemeProvider>
 )
 
-ReactDOM.render(<CustomThemeProvider><Text>Hello</Text></CustomThemeProvider>, document.getElementById('root'))
-
-export default MyThemeProvider
+ReactDOM.render(App, document.getElementById('root'))
 ```
 
 ### Notes
