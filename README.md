@@ -1,14 +1,10 @@
-# evergreen-ui-base-theme
-
-# Get started
-
-Combatible with evergreen v4 - May not be compatible with future versions
+## Get started
 
 ```
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { ThemeProvider } from 'evergreen-ui'
+import { ThemeProvider, Text } from 'evergreen-ui'
 
 import theme from './custom-theme'
 
@@ -18,7 +14,10 @@ const CustomThemeProvider = (props) => (
   </CustomThemeProvider>
 )
 
-ReactDOM.render(<CustomThemeProvider><span>Hello</span></CustomThemeProvider>, document.getElementById('root'))
+ReactDOM.render(<CustomThemeProvider><Text>Hello</Text></CustomThemeProvider>, document.getElementById('root'))
 
 export default MyThemeProvider
 ```
+
+### Notes
+Combatible with evergreen v4 - May not be compatible with future versions
